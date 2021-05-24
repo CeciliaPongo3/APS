@@ -1,0 +1,255 @@
+package quiz;
+
+import javax.swing.JOptionPane;
+
+public interface Per {
+	static void main (String []args) {
+		int Pontos = 100;
+		int pontuaçãoFinal = 0;
+			Object usuario;
+			usuario = JOptionPane.showInputDialog("Digite seu nome:");
+			JOptionPane.showMessageDialog(null,"Seja bem vindo(a)!" + usuario);
+			String per1, per2, per3, per4, per5, per6, per7, per8, per9, per10;
+			per1 = JOptionPane.showInputDialog("\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "1-Como melhorar a poluição em metrópoles? Escolha a alternativa INCORRETA:\n"
+					+ "A) Diminuição de veículos.\n"
+					+ "B)Reciclagem de lixos.\n"
+					+ "C)Limpeza de córregos.\n"
+					+ "D)Aumento de fábricas.");
+			
+
+			if(("D".equalsIgnoreCase(per1))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			
+			else {
+				JOptionPane.showMessageDialog(null, "Resposta incorreta! - 100");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			
+			per2 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "2- Quais atitudes contribuem para o aquecimento global? Escolha a alternativa INCORRETA:\n"
+					+ "A) Controle de energia e economia de água.\n"
+					+ "B) Utilização de automóveis.\n"
+					+ "C) Queimadas Florestais\n"
+					+ "D) Consumo excessivo de água");
+			
+			if(("A".equalsIgnoreCase(per2))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta! - 100");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+					
+			per3 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "3 - Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?\n"
+					+ "A) Optando pela compra de produtos com embalagens reutilizáveis.\n"
+					+ "B) Reutilizando materiais sempre que possível.\n"
+					+ "C) Apoiando iniciativas de reciclagem e coleta seletiva.\n"
+					+ "D) Todas as alternativas. ");
+			
+			if(("D".equalsIgnoreCase(per3))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta! - 100");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			
+			per4 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "4- Como reduzir a produção de lixo no dia a dia? Escolha a alternativa CORRETA\n"
+					+ "A) Comprar cada vez mais itens sem haver a necessidade.\n"
+					+ "B) Não reaproveite o lixo orgânico.\n"
+					+ "C) Prefira embalagens reutilizáveis e retornáveis. \n"
+					+ "D) Não dê preferência às embalagens retornáveis");
+			
+			if(("C".equalsIgnoreCase(per4))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta! - 100");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			
+			per5 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "5-Qual o lado negativo do uso de agrotóxicos? Escolha a alternativa CORRETA:\n"
+					+ "A) O uso de agrotóxicos não melhora a qualidade visual dos produtos cultivados.\n"
+					+ "B) Não há lado negativo.\n"
+					+ "C) Contaminação do solo, doses em excesso de agrotóxicos podem contaminar alimentos e colocar em risco a saúde.\n"
+					+ "D) Não há lado negativo no uso de agrotóxicos,pois ajuda no controle de doenças e pragas.");
+			
+			if(("C".equalsIgnoreCase(per5))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			per6 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "6- Como melhorar a qualidade do ar em cidades grandes?\r\n"
+					+ "A) Plantando mais árvores.\n"
+					+ "B) Removendo vegetações.\n"
+					+ "C) Depositando lixos no solo para que assim não haja poluição aparente.\n"
+					+ "D) Aumentando a frota de veículos individuais.");
+			
+			if(("A".equalsIgnoreCase(per6))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			per7 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "7- O que é o processo de reciclagem?\n"
+					+ "A) Reaproveitamento de latas apenas.\n"
+					+ "B) É o processo em que há a transformação do resíduo sólido que não seria aproveitado em algo útil novamente.\n"
+					+ "C) Processo responsável pela qualidade de produtos industrializados. \n"
+					+ "D) Nenhuma das alternativas.");
+			
+			if(("B".equalsIgnoreCase(per7))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			per8 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "8 - Quais desses itens são categorizados como Energias Renováveis?\r\n"
+					+ "A) Energia Solar e Carvão Mineral.\n"
+					+ "B) Energia Eólica e Energia Hídrica.\n"
+					+ "C) Gás Natural e energia Fóssil.\n"
+					+ "D) Energia Nuclear e Energia Solar.");
+			
+			if(("B".equalsIgnoreCase(per8))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			per9 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "9- Quais são as doenças causadas pelo uso do agrotóxicos? Escolha a alternativa INCORRETA:\n"
+					+ "A) Câncer.\n"
+					+ "B) Alzheimer.\n"
+					+ "C) Não causa nenhuma doença.\n"
+					+ "D) Malformação de feto.");
+			
+			if(("C".equalsIgnoreCase(per9))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+				JOptionPane.showMessageDialog(null, "Sua pontuação: "+Pontos);
+				
+			}
+			if(Pontos <= 0) {
+				JOptionPane.showMessageDialog(null, "Você ficou sem pontos, mais atenção na proxima :D.");
+				System.exit(0);
+			}
+			per10 = JOptionPane.showInputDialog( "\n Usuario: " +usuario + "| Pontos: " + Pontos+"\n"
+					+ "9 - O que é efeito estufa?\n"
+					+ "A) É a temperatura que controla o CO2.\n"
+					+ "B) É o calor que ocorre durante o verão.\n"
+					+ "C) É o efeito que ocorre quando muitas pessoas estão juntas em um local fechado.\n"
+					+ "D) São gases que absorvem uma parte dos raios do sol e os redistribuem em forma de radiação na atmosfera.");
+			
+			if(("D".equalsIgnoreCase(per10))) {
+				JOptionPane.showMessageDialog(null, "Resposta correta! +100 pontos");
+				Pontos = Pontos+100;
+				pontuaçãoFinal = Pontos;
+				JOptionPane.showMessageDialog(null, "Total de Pontos:"+Pontos);
+				
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Resposta incorreta!");
+				Pontos = Pontos - 100;
+
+			}
+			if(pontuaçãoFinal >= 500) {
+				JOptionPane.showMessageDialog(null, "Parabéns "+usuario+" chegou até o final, com a Pontuação: "+ pontuaçãoFinal+" muito bem!!!");
+				System.exit(0);
+			}
+			if(pontuaçãoFinal <500) {
+				JOptionPane.showMessageDialog(null, "Parabéns "+usuario+" chegou até o final, porem perdeu muito ponto\n"
+						+ "ficando com a pontuação final: "+pontuaçãoFinal+", mais atenção na próxima.");
+				System.exit(0);
+			}
+}
+}
